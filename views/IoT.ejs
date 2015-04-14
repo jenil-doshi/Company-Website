@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>IoT</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/prettyPhoto.css" rel="stylesheet">
+  <!--   <link href="css/item_hover.css" rel="stylesheet"> -->
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+  <!--   <link href="fonts/stylesheet.css" rel="stylesheet"> -->
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/style1.css" />
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./images/ico/apple-touch-icon-57-precomposed.png">
+
+    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.leanModal.min.js"></script>
+     <script type="text/javascript">
+    function save(){
+
+        window.location = "http://www.cs.virginia.edu/~stankovic/psfiles/IOT.pdf";
+        
+        var fname = document.getElementById('fname').value;
+        var lname = document.getElementById('lname').value;
+        var email = document.getElementById('email').value;
+
+        //alert(document.getElementById('fname').name);
+       var params = document.getElementById('fname').name+"="+fname+"&"+document.getElementById('lname').name+"="+lname+"&"+document.getElementById('email').name+"="+email;
+
+       //alert(params);
+
+        var xmlRequest;
+        if(window.XMLHttpRequest){
+            xmlRequest = new XMLHttpRequest();
+        }else{
+           xmlRequest=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+                xmlRequest.open('POST',"/save",false);
+                xmlRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                xmlRequest.send(params);
+                //alert(xmlRequest.responseText);
+                return xmlRequest.responseText;
+
+
+    }
+    </script>
+</head><!--/head-->
+<body>
+    <header id="header">
+       
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                     <a class="navbar-brand" href="/">Spartans</a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                       <!--  <li><a href="services.html">Services</a></li> -->
+                        <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/mobile">Mobile</a></li>
+                                <li><a href="/bigData">Big Data</a></li>
+                                <li><a href="/iot">IoE / IoT</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/aboutUs">Management</a></li>
+                                <li><a href="/location">Location</a></li>
+                            </ul>
+                        </li>                   
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+        
+    </header><!--/header-->
+    
+
+
+
+
+    <section id="feature" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>Internet Of Things</h2>
+                <p class="lead"><blockquote>The Internet of Things (IoT) is the interconnection of uniquely identifiable embedded computing devices within the existing Internet infrastructure. Typically, IoT is expected to offer advanced connectivity of devices, systems, and services that goes beyond machine-to-machine communications (M2M) and covers a variety of protocols, domains, and applications. The interconnection of these embedded devices (including smart objects), is expected to usher in automation in nearly all fields, while also enabling advanced applications like a Smart Grid. Things, in the IoT, can refer to a wide variety of devices such as heart monitoring implants, biochip transponders on farm animals, automobiles with built-in sensors, or field operation devices that assist fire-fighters in search and rescue.Current market examples include smart thermostat systems and washer/dryers that utilize wifi for remote monitoring. According to Gartner, there will be nearly 26 billion devices on the Internet of Things by 2020. ABI Research estimates that more than 30 billion devices will be wirelessly connected to the Internet of Things (Internet of Everything) by 2020. As per a recent survey and study done by Pew Research Internet Project, a large majority of the technology experts and engaged Internet users who responded—83 percent—agreed with the notion that the Internet/Cloud of Things, embedded and wearable computing (and the corresponding dynamic systems ) will have widespread and beneficial effects by 2025. It is, as such, clear that the IoT will consist of a very large number of devices being connected to the Internet.<blockquote>
+            </div>
+            <div style="margin-left: 300px;"> 
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/BQzBpUdHvi4" frameborder="0" allowfullscreen></iframe>
+            </div><br /><br />
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" style="margin-left: 200px;visibility: visible; -webkit-animation: fadeInDown 1000ms 600ms;">
+                        <div class="feature-wrap">
+
+                            <i id="modal_trigger" href="#modal" class="fa fa-bullhorn" style="margin-top: 0px;margin-right: 30px;"></i>
+                            <div id="modal" class="popupContainer" style="display:none;">
+                                <header class="popupHeader">
+                                    <span class="header_title">Login</span>
+                                    <span class="modal_close" style="width: 40px;height: 43px;"><a class="fa fa-times"></a></span>
+                                </header>
+                                
+                                <section class="popupBody">
+                                        <div>
+                                          <form>
+                                                <label style="padding-right: 8px;">First Name</label>
+                                                <input type="text" name="fname" id="fname"/>
+                                                <br /><br />
+
+                                                <label style="padding-right: 9px;">Last Name</label>
+                                                <input type="text" name="lname" id="lname"/>
+                                                <br /><br />
+
+                                                 <label style="padding-right: 40px;">Email</label>
+                                                <input type="text" name="email" id="email"/>
+                                                <br /><br />
+
+
+                                                <div class="action_btns">
+                                                    <div class="one_half">
+                                                        
+                                                            <input type="button" onclick="save()" value="Download" class="btn btn_red">
+                                                        
+                                                    </div>
+                                                    <div class="one_half last">
+                                                        <a href="/bigData" class="btn back_btn">Cancel</a></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                </section>
+                            </div>
+                            <h2>White Paper</h2>
+                            <h3>Click here to see all the white papers related to Internet of Things</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <!-- <i class="fa fa-comments"></i> -->
+                             <i id="modal_trigger1" href="#modal" class="fa fa-bullhorn" style="margin-top: 0px;margin-right: 30px;"></i>
+                            <div id="modal1" class="popupContainer" style="display:none;">
+                                <header class="popupHeader">
+                                    <span class="header_title">Login</span>
+                                    <span class="modal_close1" style="width: 40px;height: 43px;"><a class="fa fa-times"></a></span>
+                                </header>
+                                
+                                <section class="popupBody">
+                                        <div>
+                                            <form>
+                                                <label style="padding-right: 8px;">First Name</label>
+                                                <input type="text" />
+                                                <br /><br />
+
+                                                <label style="padding-right: 9px;">Last Name</label>
+                                                <input type="text" />
+                                                <br /><br />
+
+                                                 <label style="padding-right: 40px;">Email</label>
+                                                <input type="text" />
+                                                <br /><br />
+
+
+                                                <div class="action_btns">
+                                                    <div class="one_half"><a href="#" class="btn btn_red">Download</a></div>
+                                                    <div class="one_half last"><a href="#" class="btn back_btn">Cancel</a></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                </section>
+                            </div>
+                            <h2>Brochure</h2>
+                            <h3>Click here to see all the brochures related to Internet of Things</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    
+                </div><!--/.services-->
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#feature-->
+    
+     <section id="content" class="shortcode-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5" style="width: 100%;">
+                    <h2 style="margin-left: 500px;">Accolades</h2>
+                    <div class="accordion">
+                        <div class="panel-group" id="accordion1">
+                          <div class="panel panel-default">
+                            <div class="panel-heading active">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                  Accolade 1
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+
+                            <div id="collapseOne1" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                 <h4></h4>
+                                 <p><h4>No. 1 in IoT research</h4></p>
+                                        
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                  Accolade 2
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <h4>Awarded excellent solution award.</h4>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                                  Accolade 3
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseThree1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                              </div>
+                            </div>
+                          </div> -->
+                        </div><!--/#accordion1-->
+                    </div>
+                </div>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#content-->
+
+    <section class="pricing-area shortcode-item">
+        <div class="container">
+            <h2 style="margin-left: 500px;">Pricing Table</h2>
+            <div class="row text-center">
+                <div class="col-sm-4 plan price-one wow fadeInDown">
+                    <ul>
+                        <li class="heading-one">
+                            <h3>Start Up</h3>
+                            <span>$20/Month</span>
+                        </li>
+                        <li>30 Sensors</li>
+                        <li>5 Projects</li>
+                        <li>Unlimited Email Accounts</li>
+                        <li>30kb/secData Stream</li>
+                        <li>100GB Monthly Bandwidth</li>
+                        <li class="plan-action">
+                            <a href="" class="btn btn-primary">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 plan price-two wow fadeInDown">
+                    <ul>
+                        <li class="heading-two">
+                            <h3>Standerd</h3>
+                            <span>$40/Month</span>
+                        </li>
+                        <li>60 Sensors</li>
+                        <li>7 Projects</li>
+                        <li>Unlimited Email Accounts</li>
+                        <li>500kb/secData Stream</li>
+                        <li>120GB Monthly Bandwidth</li>
+                        <li class="plan-action">
+                            <a href="" class="btn btn-primary">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 plan price-three wow fadeInDown">
+                    <img src="images/ribon_one.png">
+                    <ul>
+                        <li class="heading-three">
+                            <h3>Premium</h3>
+                            <span>$160/Month</span>
+                        </li>
+                         <li>Unlimited Sensors</li>
+                        <li>Unlimited Projects</li>
+                        <li>Unlimited Email Accounts</li>
+                        <li>300kb/secData Stream</li>
+                        <li>Unlimited Monthly Bandwidth</li>
+                        <li class="plan-action">
+                            <a href="" class="btn btn-primary">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!--/pricing_area-->
+
+    
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2015 Spartans<a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">Spartans</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="/aboutUs">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+    <script type="text/javascript">
+    $("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
+
+
+    $("#modal_trigger1").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close1" });
+
+    </script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.prettyPhoto.js"></script>
+    <script src="./js/jquery.isotope.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/wow.min.js"></script>
+</body>
+</html>
